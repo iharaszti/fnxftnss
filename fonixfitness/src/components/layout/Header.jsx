@@ -6,14 +6,20 @@ const Header = () => {
         <div className="header-container" >
             <div className="header-wrapper">
                 <div className="main-info">
-                    <h1>Főnix Fitness Stúdió</h1>
-                    <Typed
-                        className="typed-text"
-                        strings={["Személyi edzés", "Páros edzés", "Csoportos edzés"]}
-                        typeSpeed={40}
-                        backSpeed={60}
-                        loop
-                    />
+                    <div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                    >
+                        <h1>Főnix Fitness Stúdió</h1>
+                        <Typed
+                            className="typed-text"
+                            strings={["Személyi edzés", "Páros edzés", "Csoportos edzés"]}
+                            typeSpeed={40}
+                            backSpeed={60}
+                            loop
+                        />
+                    </div>
                 </div>
             </div>
         </div >
