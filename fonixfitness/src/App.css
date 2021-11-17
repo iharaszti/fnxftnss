@@ -32,8 +32,12 @@ body {
 
 /******************************** Navbar *****************/
 .logo {
-  width: 10rem;
-  height: 10rem;
+  width: 14vh;
+  height: 14vh;
+}
+
+nav {
+  height: 15vh;
 }
 
 nav a.nav-link {
@@ -53,10 +57,10 @@ nav ul li {
   border-top: 0.1rem solid  var(--primary-dark);
 }
 
-.navbar-band {
-  max-width: 8rem;
+.navbar-brand {
+  max-width: 14vh;
   padding: 0 !important;
-  height: 8rem !important;
+  height: 14vh !important;
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
@@ -80,7 +84,7 @@ nav ul li {
   background: url(resource/bg-transparent.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 85vh;
 }
 
 .main-info {
