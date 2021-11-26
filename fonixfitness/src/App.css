@@ -10,7 +10,21 @@
   --white: rgb(255,255,255);
 }
 
+.app{
+  height: 100vh;
+}
 
+.pages{
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.pages > * {
+  width: 100vw;
+  height: 85vh;
+}
 
 .gradient-bg {
 
@@ -31,87 +45,5 @@
 
 }
 
-/******************************** Navbar *****************/
-.logo {
-  width: 14vh;
-  height: 14vh;
-}
-
-nav {
-  height: 15vh;
-}
-
-nav a.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.04rem;
-  cursor: pointer;
-}
-
-nav ul li {
-  text-transform: uppercase;
-}
-
-.navbar-nav > li > a {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-  color: var(--primary-gold) !important;
-  border-top: 0.1rem solid  var(--primary-dark);
-}
-
-.navbar-brand {
-  max-width: 14vh;
-  padding: 0 !important;
-  height: 14vh !important;
-}
-
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
- /* border-top: 0.1875rem solid var(--primary-gold);*/
-  font-weight: 600 !important;
-  color: var(--primary-gold-light) !important;
-}
-
-.navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-gold);
-}
-
 /******************************** Header *****************/
-/*
-.header-container {
-  background-color: black;
-}
-*/
-.header-wrapper {
-  position: relative;
-  background: url(resource/bg-transparent.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 85vh;
-}
 
-.main-info {
-  display: flex;
-  position: absolute;
-  top:0;
-  left:0;
-  right: 0;
-  bottom: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: var(--font-family);
-}
-
-.main-info h1 {
-  color: var(--primary-gold);
-  text-transform: uppercase;
-  font-weight: 800;  
-  font-family: var(--font-family);
-}
-
-.typed-text{
-  font-size: 2rem;
-  color: var(--white);
-  font-weight: 300;
-  font-family: var(--font-family);
-}

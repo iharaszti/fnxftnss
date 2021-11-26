@@ -1,7 +1,8 @@
 import React from 'react'
-import logo from "../resource/logo_low_res transparent.png"
+import logo from "../../../assets/logo_low_res transparent.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import "./Navbar.css"
 
 const Navbar = () => {
     return (

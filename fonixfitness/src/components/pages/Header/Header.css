@@ -1,0 +1,35 @@
+.header-wrapper {
+    position: relative;
+    background: url(/src/assets/bg-transparent.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+  }
+  
+  .main-info {
+    display: flex;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-family);
+  }
+  
+  .main-info h1 {
+    color: var(--primary-gold);
+    text-transform: uppercase;
+    font-weight: 800;  
+    font-family: var(--font-family);
+  }
+  
+  .typed-text{
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 300;
+    font-family: var(--font-family);
+  }
