@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="hu">
 
+
 <head>
+
+  <style name="style">
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+
+    body::-webkit-scrollbar-corner {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    body::-webkit-scrollbar {
+      width: 0.3em;
+      background: transparent;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: #f7b50146;
+      border-radius: 20px;
+      visibility: hidden;
+    }
+
+    body:hover::-webkit-scrollbar-thumb {
+      visibility: visible;
+    }
+  </style>
+
+
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/logo_low_res.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <!--<link rel="stylesheet" href="../src/App.css">-->
+  <meta name="description" content="Főnix Fitness Stúdió - Mogyorósi Milán" />
 
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <title>Főnix Fitness Stúdió</title>
 </head>
 
-<body>
+<body style="background-color: rgba(0, 0, 0, 1);
+        color: rgb(244, 175, 96);
+        font-family: 'Manrope', sans-serif;
+        width: 100vw;
+        overflow-x: hidden;
+        overflow: overlay;
+        scroll-behavior: smooth;">
+
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 
