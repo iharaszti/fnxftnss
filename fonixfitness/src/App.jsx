@@ -10,12 +10,12 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
+      <div className="gradient-bg">
+        <Header />
+      </div>
       <div className="pages">
-        <div className="gradient-bg">
-          <Header />
-        </div>
-        <Services />
-        <Prices />
+        <Services id="services" />
+        <Prices id="prices" />
       </div>
     </div>
   )

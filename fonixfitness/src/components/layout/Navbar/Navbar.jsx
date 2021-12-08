@@ -5,6 +5,11 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 import "./Navbar.css"
 
 const Navbar = () => {
+    const handleNavigation = (e) => {
+        //console.log(e.currentTarget);
+        //window.location.href = "#services";
+    }
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
@@ -18,11 +23,11 @@ const Navbar = () => {
                         <li className="nav-item active">
                             <a className="nav-link" href="#">Stúdió</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Szolgáltatások</a>
+                        <li onClick={handleNavigation} className="nav-item">
+                            <a className="nav-link" href="#services">Szolgáltatások</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Árak</a>
+                            <a className="nav-link" href="#prices">Árak</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Rólam</a>
