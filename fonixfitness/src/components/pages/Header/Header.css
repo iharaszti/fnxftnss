@@ -1,6 +1,7 @@
 .header-wrapper {
     position: relative;
     background: url(/src/assets/bg-transparent.png) no-repeat;
+    background-blend-mode: darken;
     background-size: cover;
     background-position: center;
     height: 85vh;

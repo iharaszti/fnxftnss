@@ -5,7 +5,19 @@
 
 nav {
     height: 15vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    transition: top 0.6s;
   }
+  
+/* #navbar {
+    background-color: #333; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    transition: top 0.3s; 
+  }   */
   
   nav a.nav-link {
     font-weight: 500;

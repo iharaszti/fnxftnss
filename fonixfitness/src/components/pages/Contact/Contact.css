@@ -1,0 +1,96 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-in {
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 0px orange;
+}
+
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex:50%;
+}
+
+.contact-map iframe{
+    width: 90%;
+    height: 90%;
+    padding: 30px;
+}
+
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex:50%;
+    text-align: center;
+}
+
+.contact-form h2{
+    margin-bottom: 10px;
+    color: var(--primary-gold);
+}
+
+.contact-form-text{
+    width: 100%;
+    border: 1px solid var(--primary-gold);
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-textarea{
+    width: 100%;
+    border: 2px solid var(--primary-gold);
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-sendbtn{
+    width: 20%;
+    border:1px ridge orange;
+    text-transform: uppercase;
+    outline:none;
+    border-radius: 50px;
+    padding: 10px;
+    background:transparent;
+    color: var(--primary-gold);
+    font-weight: bold;
+}
+
+.contact-form-icongroup{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.contact-form-icon{
+    padding: 10px;
+    border:none;
+    background: transparent;
+    color: var(--primary-gold);
+    font-style: italic;
+    font-size: 14px;
+}
+
+.ft14 {
+    font-size: 14px !important;
+    color:orange;      
+    cursor: pointer;
+}
