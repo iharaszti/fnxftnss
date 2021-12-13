@@ -16,10 +16,12 @@ const Services = (props) => {
         })();
     }, [])
     return (
-        <div id={props.id} className="services-wrapper">
-            <SectionTitle title="Szolgáltatások" />
+        <>
+            <div id={props.id} className="services-wrapper">
+                <SectionTitle title="Szolgáltatások" />
+            </div>
             <ScrollUp />
-        </div>
+        </>
     )
 }
 

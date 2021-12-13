@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .discounts-wrapper {
+      width: 100%;
+      height: auto;
+  }
