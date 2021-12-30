@@ -41,9 +41,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <a className="nav-link" href="#packages">Csomagok</a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className="nav-link" href="#discounts">Kedvezmények</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <a className="nav-link" href="#contact">Kapcsolat</a>
                         </li>

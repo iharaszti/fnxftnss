@@ -1,41 +1,36 @@
 import React from 'react'
 import ScrollUp from '../../Subcomponents/ScrollUp/ScrollUp'
 import SectionTitle from '../../Subcomponents/SectionTitle/SectionTitle'
+import { Zoom } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 import "./Pictures.css"
 
 const Pictures = (props) => {
+    const images = props.gallery.map(x => x?.picture.fields.file.url);
+
+    const zoomOutProperties = {
+        duration: 5000,
+        transitionDuration: 500,
+        infinite: true,
+        indicators: (i) => <div className="indicator"><img style={{ width: "50px", height: "25px" }} src={images[i]} alt={i + 1} /></div> /*true*/,
+        scale: 0.4,
+        arrows: true
+    };
+
     return (
         <>
             <div id={props.id} className="pictures-wrapper">
                 <SectionTitle title="Stúdió" />
-                <div className="slideshow-container">
-                    <div className="mySlides fade">
-                        <div className="numbertext">1 / 3</div>
-                        <img src="img1.jpg" />
-                        <div className="text">Caption Text</div>
-                    </div>
-
-                    <div className="mySlides fade">
-                        <div className="numbertext">2 / 3</div>
-                        <img src="img2.jpg" />
-                        <div className="text">Caption Two</div>
-                    </div>
-
-                    <div className="mySlides fade">
-                        <div className="numbertext">3 / 3</div>
-                        <img src="img3.jpg" />
-                        <div className="text">Caption Three</div>
-                    </div>
-
-                    <a className="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a className="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br />
-
-                <div style={{ textAlign: "center" }}>
-                    <span className="dot" onclick="currentSlide(1)"></span>
-                    <span className="dot" onclick="currentSlide(2)"></span>
-                    <span className="dot" onclick="currentSlide(3)"></span>
+                <div className="slide-container" style={{ justifyContent: "center", alignItems: "center", justifyItems: "center" }}>
+                    <Zoom {...zoomOutProperties} >
+                        {
+                            images.map((url, index) => (
+                                <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+                                    <img key={index} style={{ width: "auto", maxHeight: "75vh" }} src={url} />
+                                </div>
+                            ))
+                        }
+                    </Zoom>
                 </div>
             </div >
             <ScrollUp />
