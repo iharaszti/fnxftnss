@@ -1,4 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
@@ -12,37 +11,29 @@
 }
 
 .app{
-  height: 100vh;
 }
 
 .pages{
   width: 100%;
-  /* height: vh; */
   position: relative;
   background-color: rgb(19,10,1);
   background-color: linear-gradient(90deg, rgba(19,10,1,1) 0%, rgba(107,68,10,1) 72%, rgba(108,108,108,1) 100%);  
 }
 
 .pages > * {
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
 }
 
 .gradient-bg {
 
-    /* ff 3.6+ */
     background:-moz-radial-gradient(circle at 100% 100%, rgba(98, 63, 3, 1) 1%, rgba(0, 0, 0, 1) 45%);
 
-    /* safari 5.1+,chrome 10+ */
     background:-webkit-radial-gradient(circle at 100% 100%, rgba(98, 63, 3, 1) 1%, rgba(0, 0, 0, 1) 45%);
 
-    /* opera 11.10+ */
     background:-o-radial-gradient(circle at 100% 100%, rgba(98, 63, 3, 1) 1%, rgba(0, 0, 0, 1) 45%);
 
-    /* ie 10+ */
     background:-ms-radial-gradient(circle at 100% 100%, rgba(98, 63, 3, 1) 1%, rgba(0, 0, 0, 1) 45%);
 
-    /* global 92%+ browsers support */
     background:radial-gradient(circle at 100% 100%, rgba(98, 63, 3, 1) 1%, rgba(0, 0, 0, 1) 45%);
 
 }
@@ -53,5 +44,4 @@ footer {
   text-align: center;
 }
 
-/******************************** Header *****************/
 

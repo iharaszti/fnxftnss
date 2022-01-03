@@ -1,11 +1,22 @@
 * {
     box-sizing: border-box;
   }
+
+  .packages-wrapper {
+     min-height: 99vh; 
+  }
+
+  .packages-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   
   /* Create three columns of equal width */
   .columns {
     float: left;
     width: 33.3%;
+    /* min-height: 75%; */
     padding: 8px;
     color: var(--primary-gold);
   }
@@ -35,7 +46,7 @@
   
   /* List items */
   .price li {
-    border-bottom: 1px solid orange;
+    /* border-bottom: 1px solid orange; */
     padding: 20px;
     text-align: center;
   }
@@ -47,22 +58,19 @@
     font-size: 20px;
     font-weight:bold;
   }
-  
-  /* The "Sign Up" button */
-  .button {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
+
+  .price .details {
+    /* height: 58%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
   
   /* Change the width of the three columns to 100%
   (to stack horizontally on small screens) */
   @media only screen and (max-width: 600px) {
     .columns {
-      width: 100%;
+      min-width: 100%;
     }
   }

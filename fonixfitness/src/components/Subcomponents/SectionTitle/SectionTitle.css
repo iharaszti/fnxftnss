@@ -5,6 +5,14 @@
     align-items: center;
     text-align: center;
     font-family: var(--font-family);
+    color: black;
+    transition: color 0.5s;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .title:focus {
+    color: var(--primary-gold);
   }
   
   .title h1 {
