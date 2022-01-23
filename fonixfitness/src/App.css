@@ -11,6 +11,7 @@
 }
 
 .app{
+  width: 100%;
 }
 
 .pages{
@@ -21,7 +22,7 @@
 }
 
 .pages > * {
-  width: 99vw;
+  width: 100%;
 }
 
 .gradient-bg {

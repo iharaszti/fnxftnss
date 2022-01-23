@@ -11,6 +11,10 @@ import Discounts from './components/pages/Discounts/Discounts';
 import { api } from './api/cms';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
+import ScrollUp from './components/Subcomponents/ScrollUp/ScrollUp';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const App = () => {
   const [pictures, setPictures] = useState([]);
@@ -50,6 +54,7 @@ const App = () => {
           {/* <Discounts id="discounts" /> */}
           <Contact id="contact" />
         </Fade>
+        <ScrollUp />
       </div>
       <footer>&copy; Főnix Fitness Stúdió 2022</footer>
     </div>

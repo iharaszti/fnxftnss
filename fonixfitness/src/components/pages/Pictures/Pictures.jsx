@@ -18,23 +18,20 @@ const Pictures = (props) => {
     };
 
     return (
-        <>
-            <div id={props.id} className="pictures-wrapper">
-                <SectionTitle title="Stúdió" />
-                <div className="slide-container" style={{ justifyContent: "center", alignItems: "center", justifyItems: "center" }}>
-                    <Zoom {...zoomOutProperties} >
-                        {
-                            images.map((url, index) => (
-                                <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-                                    <img key={index} style={{ width: "auto", maxHeight: "75vh" }} src={url} />
-                                </div>
-                            ))
-                        }
-                    </Zoom>
-                </div>
-            </div >
-            <ScrollUp />
-        </>
+        <div id={props.id} className="pictures-wrapper">
+            <SectionTitle title="Stúdió" />
+            <div className="slide-container" style={{ justifyContent: "center", alignItems: "center", justifyItems: "center" }}>
+                <Zoom {...zoomOutProperties} >
+                    {
+                        images.map((url, index) => (
+                            <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+                                <img key={index} style={{ width: "auto", maxHeight: "75vh" }} src={url} />
+                            </div>
+                        ))
+                    }
+                </Zoom>
+            </div>
+        </div >
     )
 }
 
