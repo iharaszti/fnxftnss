@@ -1,20 +1,14 @@
 import './App.css';
 import React, { useState, useEffect } from 'react'
-// import "bootstrap/dist/css/bootstrap.min.css"
 import Navbar from './components/layout/Navbar/Navbar';
 import Header from './components/pages/Header/Header';
 import Services from "./components/pages/Services/Services"
 import Packages from './components/pages/Packages/Packages';
 import Contact from './components/pages/Contact/Contact';
-import Pictures from './components/pages/Pictures/Pictures';
-import Discounts from './components/pages/Discounts/Discounts';
 import { api } from './api/cms';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import ScrollUp from './components/Subcomponents/ScrollUp/ScrollUp';
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const App = () => {
   const [pictures, setPictures] = useState([]);
@@ -38,6 +32,8 @@ const App = () => {
 
   }, []);
 
+  const Pictures = React.lazy(() => import('./components/pages/Pictures/Pictures'));
+
   return (
     <div className="app">
       <Navbar />
@@ -48,7 +44,9 @@ const App = () => {
       </Zoom>
       <div className="pages">
         <Fade>
-          <Pictures id="pictures" gallery={pictures} />
+          <React.Suspense fallback={<div>Loading... </div>}>
+            <Pictures id="pictures" gallery={pictures} />
+          </React.Suspense>
           <Services id="services" services={services} mealPlan={mealPlan} />
           <Packages id="packages" packages={packages} />
           {/* <Discounts id="discounts" /> */}

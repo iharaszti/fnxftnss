@@ -1,5 +1,4 @@
 import React from 'react'
-import ScrollUp from '../../Subcomponents/ScrollUp/ScrollUp'
 import SectionTitle from '../../Subcomponents/SectionTitle/SectionTitle'
 
 const Discounts = (props) => {

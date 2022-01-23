@@ -1,5 +1,4 @@
 import React from 'react'
-import ScrollUp from '../../Subcomponents/ScrollUp/ScrollUp'
 import SectionTitle from '../../Subcomponents/SectionTitle/SectionTitle'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import "./Packages.css"
@@ -23,9 +22,6 @@ const Packages = (props) => {
                     </div>
                 ))}
             </div>
-            {/* <div className="divider-pic">
-                    <img src="/src/assets/pexels-victor-freitas-703014.jpg" alt="-" />
-                </div> */}
         </div >
     )
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import ScrollUp from '../../Subcomponents/ScrollUp/ScrollUp'
 import SectionTitle from '../../Subcomponents/SectionTitle/SectionTitle'
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -18,6 +17,7 @@ const Pictures = (props) => {
     };
 
     return (
+
         <div id={props.id} className="pictures-wrapper">
             <SectionTitle title="Stúdió" />
             <div className="slide-container" style={{ justifyContent: "center", alignItems: "center", justifyItems: "center" }}>

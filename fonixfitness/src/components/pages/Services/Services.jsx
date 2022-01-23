@@ -1,7 +1,5 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import React, { useEffect } from 'react'
-import { api } from '../../../api/cms'
-import ScrollUp from '../../Subcomponents/ScrollUp/ScrollUp'
+import React from 'react'
 import SectionTitle from '../../Subcomponents/SectionTitle/SectionTitle'
 import "./Services.css"
 
