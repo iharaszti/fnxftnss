@@ -19,10 +19,6 @@ const Contact = (props) => {
                             &nbsp;(20) 296 3210
                         </button>
                         <button className="contact-form-icon" type="button">
-                            <FontAwesomeIcon icon={faEnvelopeSquare} style={{ color: "orange", borderColor: "orange" }} />
-                            &nbsp;asd@asd.com
-                        </button>
-                        <button className="contact-form-icon" type="button">
                             <a href="https://www.instagram.com/fonix_veszprem/" target="_blank" className="contact-form-inner-icon">
                                 <i className="fa fa-instagram ft14" />
                                 &nbsp;fonix_veszprem
