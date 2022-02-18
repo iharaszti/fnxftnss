@@ -25,7 +25,7 @@ const Pictures = (props) => {
                     {
                         images.map((url, index) => (
                             <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-                                <img key={index} style={{ width: "auto", maxHeight: "75vh" }} src={url} />
+                                <img key={index} style={{ width: "auto", maxHeight: "75vh" }} src={url} alt="" />
                             </div>
                         ))
                     }
