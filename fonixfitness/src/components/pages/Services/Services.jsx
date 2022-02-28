@@ -5,17 +5,11 @@ import "./Services.css"
 
 const Services = (props) => {
     const _ = require("lodash");
-    const services = _.sortBy(props.services, "studentPrice");
+    const services = _.sortBy(props.services, "orderNr");
     return (
         <div id={props.id} className="services-wrapper">
             <SectionTitle title="Szolgáltatások" />
             <div className='services-content'>
-                <div className="columns">
-                    <ul className='price'>
-                        <li className="header">{props.mealPlan[0]?.name}</li>
-                        <li><section>{documentToReactComponents(props.mealPlan[0]?.description)}</section></li>
-                    </ul>
-                </div>
                 {services.map((service, index) => (
                     <div key={index} className="columns">
                         <ul className="price">
@@ -26,6 +20,12 @@ const Services = (props) => {
                         </ul>
                     </div>
                 ))}
+                <div className="columns">
+                    <ul className='price'>
+                        <li className="header">{props.mealPlan[0]?.name}</li>
+                        <li><section>{documentToReactComponents(props.mealPlan[0]?.description)}</section></li>
+                    </ul>
+                </div>
             </div>
             <div>
                 * Érvényes: Minden nappali tagozatos középiskolás, főiskolás, és egyetemista diák számára.
